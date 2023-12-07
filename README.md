@@ -5,7 +5,7 @@
 
 ###  Diagram UML :
 <div style="text-align: center;">
- <img src="./src/Res/tandur_gui.jpg" sizes="1500" alt="image">
+ <img src="https://github.com/KrishnanditoLksn/Tandur_Shop_GUI/assets/96246664/033a8f6c-8ceb-4f07-8e23-b6841512c587" sizes="1500" alt="image">
 <h1>Anggota Kelompok</h1>
     <br>
     <p><a href="https://github.com/KrishnanditoLksn">Emmanuel Krishnandito Laksana</a>/ 225314024</p>
