@@ -286,7 +286,9 @@ public class MainApp extends javax.swing.JFrame {
         });
 
         jButtonKeranjang.setBackground(new java.awt.Color(153, 255, 51));
-        jButtonKeranjang.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Res/shopping-cart-228.png"))); // NOI18N
+        jButtonKeranjang.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jButtonKeranjang.setForeground(new java.awt.Color(0, 0, 0));
+        jButtonKeranjang.setText("Keranjang");
         jButtonKeranjang.setPreferredSize(new java.awt.Dimension(163, 100));
         jButtonKeranjang.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -324,10 +326,10 @@ public class MainApp extends javax.swing.JFrame {
                                 .addGroup(jControlPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                                     .addComponent(jCheckoutButton1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 86, Short.MAX_VALUE)
                                     .addComponent(jLoginButton, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 37, Short.MAX_VALUE)
-                                .addGroup(jControlPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jRegisterButton, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jButtonKeranjang, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 26, Short.MAX_VALUE)
+                                .addGroup(jControlPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(jButtonKeranjang, javax.swing.GroupLayout.PREFERRED_SIZE, 1, Short.MAX_VALUE)
+                                    .addComponent(jRegisterButton, javax.swing.GroupLayout.DEFAULT_SIZE, 97, Short.MAX_VALUE))))
                         .addContainerGap())
                     .addGroup(jControlPanel1Layout.createSequentialGroup()
                         .addGroup(jControlPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -354,10 +356,10 @@ public class MainApp extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jCodButton, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 125, Short.MAX_VALUE)
-                .addGroup(jControlPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jControlPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLoginButton, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButtonKeranjang, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
+                    .addComponent(jButtonKeranjang, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(20, 20, 20)
                 .addGroup(jControlPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jCheckoutButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jRegisterButton, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -449,7 +451,7 @@ public class MainApp extends javax.swing.JFrame {
                 .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 238, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(125, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         jMainRootPanel.add(jMainDashboardPanel, "card2");
@@ -487,19 +489,17 @@ public class MainApp extends javax.swing.JFrame {
         jTanamanPanel1.setLayout(jTanamanPanel1Layout);
         jTanamanPanel1Layout.setHorizontalGroup(
             jTanamanPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabelTanaman1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addGroup(jTanamanPanel1Layout.createSequentialGroup()
+            .addComponent(jLabelTanaman1, javax.swing.GroupLayout.DEFAULT_SIZE, 410, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jTanamanPanel1Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jSpinnerItem1, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(jTanamanPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jTanamanPanel1Layout.createSequentialGroup()
-                        .addComponent(hrg)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jButtonTambahKeranjang1))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jTanamanPanel1Layout.createSequentialGroup()
-                        .addComponent(nma)
-                        .addGap(147, 147, 147))))
+                .addGroup(jTanamanPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(nma)
+                    .addComponent(hrg))
+                .addGap(74, 74, 74)
+                .addComponent(jButtonTambahKeranjang1)
+                .addContainerGap())
         );
         jTanamanPanel1Layout.setVerticalGroup(
             jTanamanPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -512,9 +512,13 @@ public class MainApp extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(hrg, javax.swing.GroupLayout.DEFAULT_SIZE, 22, Short.MAX_VALUE)
                         .addGap(13, 13, 13))
-                    .addGroup(jTanamanPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(jSpinnerItem1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jButtonTambahKeranjang1))))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jTanamanPanel1Layout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addGroup(jTanamanPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jTanamanPanel1Layout.createSequentialGroup()
+                                .addComponent(jSpinnerItem1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addContainerGap())
+                            .addComponent(jButtonTambahKeranjang1, javax.swing.GroupLayout.Alignment.TRAILING)))))
         );
 
         jTanamanPanel2.setBackground(new java.awt.Color(255, 255, 255));
@@ -1100,7 +1104,7 @@ public class MainApp extends javax.swing.JFrame {
                     .addComponent(jTanamanPanel9, javax.swing.GroupLayout.DEFAULT_SIZE, 220, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jTanamanPanel11, javax.swing.GroupLayout.PREFERRED_SIZE, 171, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(438, Short.MAX_VALUE))
+                .addContainerGap(319, Short.MAX_VALUE))
         );
 
         jMainRootPanel.add(jItemPanel, "card3");
@@ -1207,7 +1211,7 @@ public class MainApp extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(jKeranjangMainPanelLayout.createSequentialGroup()
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 919, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 373, Short.MAX_VALUE))
+                .addGap(0, 254, Short.MAX_VALUE))
             .addGroup(jKeranjangMainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(jKeranjangMainPanelLayout.createSequentialGroup()
                     .addGap(0, 0, Short.MAX_VALUE)
@@ -1311,9 +1315,9 @@ public class MainApp extends javax.swing.JFrame {
                 .addComponent(jLoginTitle, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(34, 34, 34)
                 .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(104, 104, 104)
-                .addComponent(jLabelLogin, javax.swing.GroupLayout.PREFERRED_SIZE, 244, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(454, Short.MAX_VALUE))
+                .addGap(117, 117, 117)
+                .addComponent(jLabelLogin, javax.swing.GroupLayout.PREFERRED_SIZE, 248, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(318, Short.MAX_VALUE))
         );
 
         jMainRootPanel.add(jLoginUserPanel, "card5");
@@ -1452,7 +1456,7 @@ public class MainApp extends javax.swing.JFrame {
                 .addComponent(jRegistrasiButton, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(jLabelCodFooter1, javax.swing.GroupLayout.PREFERRED_SIZE, 215, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(442, Short.MAX_VALUE))
+                .addContainerGap(323, Short.MAX_VALUE))
         );
 
         jMainRootPanel.add(jRegisterUserPanel, "card6");
@@ -1706,7 +1710,7 @@ public class MainApp extends javax.swing.JFrame {
                 .addComponent(jDataCODUser, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(39, 39, 39)
                 .addComponent(jLabelCodFooter, javax.swing.GroupLayout.PREFERRED_SIZE, 204, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(437, Short.MAX_VALUE))
+                .addContainerGap(318, Short.MAX_VALUE))
         );
 
         jMainRootPanel.add(jBayarCodPanel, "card8");
@@ -1757,6 +1761,7 @@ public class MainApp extends javax.swing.JFrame {
 
     private void jButtonTambahKeranjang1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonTambahKeranjang1ActionPerformed
         TanamanBonsai tanaman = new TanamanBonsai();
+        int spinner1 = (Integer) jSpinnerItem1.getValue();
         boolean cek = userAuthenticationLoginChecker();
         if (cek) {
             tanamanArrayList.add(datasTanaman.listTanaman.get(0));
@@ -1845,8 +1850,8 @@ public class MainApp extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_jRegistrasiButtonActionPerformed
 
-    private static boolean spinnerValidationChecker(JSpinner spinner) {
-        return (Integer) spinner.getValue() > 0;
+    private static boolean spinnerValidationChecker(JSpinner spinner, Tanaman tanaman) {
+        return (Integer) spinner.getValue() > 0 && (Integer) spinner.getValue() < tanaman.getStokTanaman();
     }
 
     private void jCheckoutButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckoutButton1ActionPerformed
@@ -1863,7 +1868,7 @@ public class MainApp extends javax.swing.JFrame {
                 Tanaman tanaman = tanamanArrayList.get(i);
                 JSpinner spinner = getSpinnerForTanaman(tanaman);
 
-                if (spinner != null && spinnerValidationChecker(spinner)) {
+                if (spinner != null && spinnerValidationChecker(spinner, tanaman)) {
                     int total = ((Integer) spinner.getValue() * tanaman.getHargaTanaman());
 
                     boolean plantExists = false;
@@ -2043,9 +2048,9 @@ public class MainApp extends javax.swing.JFrame {
 
         if (userAuthenticationLoginChecker()) {
             String updatedName = jTextFieldInfoUser1.getText();
-            Connection conn = null;
-            Statement st = null;
-            ResultSet rs = null;
+            Connection conn;
+            Statement st;
+            ResultSet rs;
             conn = Koneksi.getConnection();
 
             try {
@@ -2078,7 +2083,6 @@ public class MainApp extends javax.swing.JFrame {
         }
         totalAmount = barutotalAmount;
     }
-
 
     private void jButtonDeleteAccountActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonDeleteAccountActionPerformed
         // TODO add your handling code here: 

@@ -14,14 +14,8 @@ import java.sql.SQLException;
  */
 public class Koneksi {
 
-//    public Connection getKoneksi(){
-//        
-//    }
-//    
     public static void main(String[] args) {
-        Koneksi koneksi = new Koneksi();
-//        koneksi.getConnection();
-
+        getConnection();
     }
 
     public static Connection getConnection() {
